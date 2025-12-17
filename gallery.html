@@ -4,48 +4,80 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Gallery • Prerana Primary & Basvashree High School, ILKAL</title>
+  <meta name="description" content="Prerana Primary & Basvashree High School, ILKAL" />
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-  <header class="topbar">
+
+  <div class="strip">
+    <div class="container row">
+      <div class="meta">
+        <span>📍 <b>ILKAL</b>, Karnataka</span>
+        <span>📞 <b>+91-XXXXXXXXXX</b></span>
+        <span>✉️ <b>yourschool@email.com</b></span>
+      </div>
+      <div class="actions">
+        <a class="pill" href="contact.html">Visit / Enquiry</a>
+        <a class="pill" href="admissions.html">Admissions</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
     <div class="container nav">
       <a class="brand" href="index.html">
         <div class="logo" aria-hidden="true"></div>
         <div>
           <h1>Prerana Primary & Basvashree High School</h1>
-          <small>ILKAL</small>
+          <small>Learning • Discipline • Values</small>
         </div>
       </a>
+
       <button class="navbtn" id="navToggle" aria-label="Open menu">Menu</button>
-      <nav class="links" id="navLinks">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="academics.html">Academics</a>
-        <a href="admissions.html">Admissions</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
+
+      <nav class="menu" id="navMenu">
+        <a class="" href="index.html">Home</a>
+        <a class="" href="about.html">About Us</a>
+        <a class="" href="academics.html">Academics</a>
+        <a class="" href="admissions.html">Admissions</a>
+        <a class="active" href="gallery.html">Gallery</a>
+        <a class="" href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main class="container section">
+  <main class="container">
+    
+<section class="section">
+  <div class="section-title">
     <h3>Gallery</h3>
-    <p>
-      Replace these placeholders with real photos. You can add images later by putting them in an <code>assets/images/</code> folder
-      and using <code>&lt;img&gt;</code> tags.
-    </p>
+    <p>Click any photo to view</p>
+  </div>
 
-    <div class="gallery">
-      <img src="images/annual-day/Annualday.jpg" alt="School campus" class="ph-img">
-      <img src="images/annual-day/kids1.jpg" alt="School campus" class="ph-img">
-      <img src="images/annual-day/kids.jpg" alt="School campus" class="ph-img">
-      <img src="images/campus/PreranaSchoolCampus.jpg" alt="School campus" class="ph-img">
-      <img src="images/campus/PreranaSchool.jpg" alt="School campus" class="ph-img">
-      <img src="images/campus/campus1.jpg" alt="School campus" class="ph-img">
-    </div>
+  <div class="note">
+    Put your photos inside <b>assets/images/gallery/</b> and update the filenames below.
+    Keep names in lowercase with no spaces (example: <code>annualday-1.jpg</code>).
+  </div>
+
+  <div class="gallery" style="margin-top:14px;">
+    <img data-lightbox src="/images/annual-day/Annualday.jpg" alt="Annual Day photo">
+    <img data-lightbox src="/images/independnce-day/Students" alt="Students activity">
+    <img data-lightbox src="assets/images/gallery/kids-2.jpg" alt="Students activity">
+    <img data-lightbox src="assets/images/gallery/campus-1.jpg" alt="School campus">
+    <img data-lightbox src="assets/images/gallery/campus-2.jpg" alt="School campus">
+    <img data-lightbox src="assets/images/gallery/class-1.jpg" alt="Classroom activity">
+  </div>
+
+  <div id="lightbox" class="lightbox" aria-label="Image viewer">
+    <img id="lightboxImg" alt="Expanded view">
+  </div>
+</section>
 
     <footer class="footer">
-      © <span id="year"></span> Prerana Primary & Basvashree High School, ILKAL
+      <div class="container">
+        © <span id="year"></span> Prerana Primary & Basvashree High School, ILKAL •
+        <a href="contact.html">Contact</a>
+      </div>
     </footer>
   </main>
 

@@ -4,71 +4,96 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact • Prerana Primary & Basvashree High School, ILKAL</title>
+  <meta name="description" content="Prerana Primary & Basvashree High School, ILKAL" />
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-  <header class="topbar">
+
+  <div class="strip">
+    <div class="container row">
+      <div class="meta">
+        <span>📍 <b>ILKAL</b>, Karnataka</span>
+        <span>📞 <b>+91-XXXXXXXXXX</b></span>
+        <span>✉️ <b>yourschool@email.com</b></span>
+      </div>
+      <div class="actions">
+        <a class="pill" href="contact.html">Visit / Enquiry</a>
+        <a class="pill" href="admissions.html">Admissions</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
     <div class="container nav">
       <a class="brand" href="index.html">
         <div class="logo" aria-hidden="true"></div>
         <div>
           <h1>Prerana Primary & Basvashree High School</h1>
-          <small>ILKAL</small>
+          <small>Learning • Discipline • Values</small>
         </div>
       </a>
+
       <button class="navbtn" id="navToggle" aria-label="Open menu">Menu</button>
-      <nav class="links" id="navLinks">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="academics.html">Academics</a>
-        <a href="admissions.html">Admissions</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
+
+      <nav class="menu" id="navMenu">
+        <a class="" href="index.html">Home</a>
+        <a class="" href="about.html">About Us</a>
+        <a class="" href="academics.html">Academics</a>
+        <a class="" href="admissions.html">Admissions</a>
+        <a class="" href="gallery.html">Gallery</a>
+        <a class="active" href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main class="container section">
+  <main class="container">
+    
+<section class="section">
+  <div class="section-title">
     <h3>Contact</h3>
-    <p>Parents and visitors can reach us using the details below or send a message.</p>
+    <p>Reach us or send a message</p>
+  </div>
 
-    <div class="split">
-      <div class="card feature">
-        <h4>School Office</h4>
-        <p style="margin:0 0 10px;">Update these details:</p>
-        <ul style="color:var(--muted); line-height:1.8; margin:0; padding-left:18px;">
-          <li><strong>Address:</strong> ILKAL, Karnataka (add full address)</li>
-          <li><strong>Phone:</strong> +91-XXXXXXXXXX</li>
-          <li><strong>Email:</strong> yourschool@email.com</li>
-        </ul>
-
-        <div class="notice">
-          Add a Google Maps link here later (optional).
-        </div>
-      </div>
-
-      <form class="card form" method="POST" action="https://formspree.io/f/manrroln">
-        <h4 style="margin:0 0 6px;">Send a message</h4>
-        <p style="margin:0 0 10px; color:var(--muted);">Replace <code>yourFormId</code> after you create a Formspree form.</p>
-
-        <label for="name">Full Name</label>
-        <input id="name" name="name" required />
-
-        <label for="phone">Phone</label>
-        <input id="phone" name="phone" />
-
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required />
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <button class="btn primary" type="submit" style="margin-top:12px; width:100%;">Submit</button>
-      </form>
+  <div class="grid2">
+    <div class="card feature">
+      <h4>School Office</h4>
+      <ul style="color:var(--muted);line-height:1.9;margin:0;padding-left:18px;">
+        <li><b>Address:</b> ILKAL, Karnataka (add full address)</li>
+        <li><b>Phone:</b> +91-XXXXXXXXXX</li>
+        <li><b>Email:</b> yourschool@email.com</li>
+      </ul>
+      <div class="note">Optional: add a Google Maps embed here later.</div>
     </div>
 
+    <form class="card pad" method="POST" action="https://formspree.io/f/manrroln">
+      <h3 style="margin:0 0 8px;">Send a message</h3>
+      <p style="margin:0 0 10px;color:var(--muted);line-height:1.7">
+        Messages will be delivered to your email via Formspree.
+      </p>
+
+      <label for="name">Full Name</label>
+      <input id="name" name="name" required>
+
+      <label for="phone">Phone</label>
+      <input id="phone" name="phone">
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button class="btn primary" type="submit" style="width:100%;margin-top:12px;">Submit</button>
+      <div class="note">Replace phone/email/address in the header and this page.</div>
+    </form>
+  </div>
+</section>
+
     <footer class="footer">
-      © <span id="year"></span> Prerana Primary & Basvashree High School, ILKAL
+      <div class="container">
+        © <span id="year"></span> Prerana Primary & Basvashree High School, ILKAL •
+        <a href="contact.html">Contact</a>
+      </div>
     </footer>
   </main>
 
